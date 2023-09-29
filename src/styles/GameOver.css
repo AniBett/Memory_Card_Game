@@ -1,0 +1,27 @@
+/* Blur effect class */
+
+/* Game Over message styling (for your GameOver component) */
+.game-over-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for the message */
+  z-index: 999; /* Ensure the message is on top of everything */
+  color: #242424;
+}
+@media (prefers-color-scheme: light) {
+  .game-over-screen {
+    background-color: #242424;
+    color: white;
+  }
+}
